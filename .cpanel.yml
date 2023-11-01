@@ -1,5 +1,4 @@
----
 deployment:
   tasks:
     - export DEPLOYPATH=/home/injamtan/public_html/
-    - /bin/cp * $DEPLOYPATH
+    - /bin/cp -R * $DEPLOYPATH
