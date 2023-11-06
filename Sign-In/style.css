@@ -8,12 +8,13 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background: url("images1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background: url("images1.jpg"); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
     overflow: hidden;
 }
+
 .wrapper{
     display: flex;
     justify-content: center;
