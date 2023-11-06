@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             const paths = {
                 'explore-space': 'INDIGO/ExploreSpace/dashboardvideo.html',
                 'birthday-wish': 'INDIGO/BirthdayWish/inlatan.html',
-                'my-card': 'INDIGO/MyCard/index.html'
+                'my-card': 'INDIGO/MyCard/card.html'
             };
             window.location.href = paths[id] || '#';
         });
