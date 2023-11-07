@@ -1,26 +1,107 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Opening Envelope Dashboard</title>
-    </head>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    <body>
-        <div class="letter-image">
-            <div class="animated-mail">
-                <div class="back-fold"></div>
-                <div class="letter">
-                    <div class="letter-border"></div>
-                    <div class="letter-title"></div>
-                    <div class="letter-context"></div>
-                    <div class="letter-stamp">
-                        <div class="letter-stamp-inner"></div>
-                    </div>
-                </div>
-                <div class="top-fold"></div>
-                <div class="body"></div>
-                <div class="left-fold"></div>
-            </div>
-            <div class="shadow"></div>
-        </div>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #8B0000;
+      color: #FFF; /* Ensure text is visible on the dark background */
+    } 
+    .wrap {
+      max-width: 90%; /* Responsive width */
+      margin: 0 auto; /* Center the wrap */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .container {
+      height: 50px;
+      width: 100%; /* Full width of the wrap */
+      perspective: 400px;
+      margin-bottom: 50px; /* Space between the cube and the images */
+    }
+    .cube {
+      height: 100%; /* Fill the container height */
+      transform-origin: center;
+      transform-style: preserve-3d;
+      animation: rotate 8s infinite ease-in-out;
+    }
+    .side {
+      position: absolute;
+      height: 100%; /* 100% of cube's height */
+      width: 100%; /* 100% of cube's width */
+      font-size: calc(5vw + 1em); /* Responsive font size */
+      font-family: "SF Pro", Helvetica, Arial, sans-serif;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      backface-visibility: hidden;
+    }
+    .side1 { transform: translateZ(25px); }
+    .side3 { transform: rotateX(180deg) translateZ(25px); }
+    .side4 { transform: rotateX(90deg) translateZ(25px); }
+    .side2 { transform: rotateX(-90deg) translateZ(25px); }
+    @keyframes rotate {
+      0%, 100% { transform: rotateX(0deg) rotateY(0deg); }
+      25% { transform: rotateX(90deg); }
+      50% { transform: rotateX(180deg); }
+      75% { transform: rotateX(270deg); }
+    }
+    div.gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Responsive grid */
+      gap: 10px;
+      width: 100%; /* Full width */
+      max-width: 500px; /* Maximum width of gallery */
+      margin: 0 auto; /* Center the gallery */
+    }
+    img {
+      width: 100%; /* Responsive width */
+      height: auto; /* Maintain aspect ratio */
+      object-fit: cover;
+      border: 3px solid white; /* Adjust border size */
+    }
+    @media (max-width: 768px) {
+      .side {
+        font-size: calc(4vw + 1em); /* Smaller font size for smaller screens */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Rotating cube content -->
+  <div class="wrap">
+    <div class="container">
+      <div class="cube">
+        <div class="side side1">Welcome</div>
+        <div class="side side2">To</div>
+        <div class="side side3">InjamTanvir</div>
+        <div class="side side4">Dashboard</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Centered images content -->
+  <div class="gallery">
+    <a href="another-page1.html">
+      <img src="Image/image1.jpg" alt="City">
+    </a>
+    <a href="another-page2.html">
+      <img src="Image/image2.jpg" alt="Trees">
+    </a>
+  </div>
+
+</body>
 </html>
