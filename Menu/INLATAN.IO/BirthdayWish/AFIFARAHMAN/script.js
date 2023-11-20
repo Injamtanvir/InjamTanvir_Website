@@ -4,7 +4,17 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function startCountdown() {
-    const nextBirthday = new Date(new Date().getFullYear() + 1, 10, 22); // Next year's birthday
+    const today = new Date();
+    const currentYear = today.getFullYear();
+    const birthMonth = 9; // November (JavaScript months are 0-based)
+    const birthDate = 17;
+    let nextBirthday = new Date(currentYear, birthMonth, birthDate);
+
+    // If today's date is past this year's birthday, set the next birthday to next year
+    if (today > nextBirthday) {
+        nextBirthday = new Date(currentYear + 1, birthMonth, birthDate);
+    }
+
     const countdownElement = document.getElementById('countdown-timer');
 
     setInterval(() => {
@@ -20,9 +30,12 @@ function startCountdown() {
     }, 1000);
 }
 
+// ... rest of the code remains the same ...
+
+
 function populateGreetings() {
     const greetings = [
-        "Dear INJAM UL HAQUE,",
+        "Dear AFIFA RAHMAN,",
 
 "On the occasion of your birthday, I extend my warmest wishes for a day filled with joy and a year ahead marked by success and fulfillment. May this special day be a reflection of the remarkable person you are, and may the coming year bring you abundant opportunities for growth and happiness.",
 
