@@ -17,7 +17,7 @@ body {
 }
 
 header {
-	height: 90vh;
+	height: 4%;
 	/* background: #000; */
 }
 .black {
@@ -54,7 +54,7 @@ nav ul li a {
 nav ul li a:hover {
 	color: #fff;
 	border-radius: 5px;
-	background: #DF2771;
+	
 }
 .active {
 	color: #fff;
@@ -176,7 +176,7 @@ a, button {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	/* background: #FA4B37; */
+	 background: #FA4B37; 
 }
 .side-menu ul li {
 	list-style: none;
@@ -590,169 +590,49 @@ form textarea {
 }
 
 /*REVIEW SECTION*/
-#makeitfull {
-	display: flex;
-	justify-content: center;
-	transform: translateY(35px);
-}
-#makeitfull img {
-	width: 50px;
-}
-.review {
-	background: #F8F8F8;
-	width: 100%;
-}
-.rev-container {
-	padding: 10px 10%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-}
-.rev-container .rev-card {
-	/*overflow: hidden;*/
-	width: 550px;
-	height: 240px;
-	margin-bottom: 40px;
-	background: #fff;
-	display: flex;
-	padding: 10px;
-	box-shadow: 2px 2px 20px rgba(0,0,0,0.2);
-}
-.rev-card:hover {
-	box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
-}
-.identity {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	padding: 10px;
-}
-.identity img {
-	width: 120px;
-	height: 120px;
-	transition-duration: .8s;
-	border-radius: 50%;
-}
-.identity img:hover {
-	transform: scale(2.2);
-	border-radius: 0px;
-	box-shadow: 0 0 20px rgba(0,0,0,0.3);
-}
-.identity p {
-	width: 150px;
-	font-weight: bold;
-	color: #2E3D49;
-	text-align: center;
-}
-.identity h6 {
-	width: 150px;
-	text-align: center;
-}
-.identity .rating img {
-	width: 12px;
-	height: 12px;
-	margin-right: 5px;
-}
-.rev-cont {
-	overflow: hidden;
-}
-.rev-cont #title {
-	padding: 10px;
-	color: #2E3D49;
-	font-weight: bold;
-}
-.rev-cont #content {
-	padding: 10px;
-	font-size: .9em;
-	color: #2E3D49;
-	line-height: 22px;
-	text-align: justify;
+.review-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
 }
 
-
-/*FEEDBACK*/
-.title2 {
-	position: relative;
-	margin-top: 150px;
-	margin-left: 100px;
-}
-.title2 span{
-	font-weight: 700;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 30px;
-	color: #2E3D49;
-}
-.title2 .shortdesc2 {
-	padding: 10px;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 15px;
-	color: #2E3D49;
-	margin-bottom: 10px;
-}
-.feedbox {
-	margin-top: 50px;
-	width: 100%;
-	display: flex;
-	background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)),url("images/extra/b4.jpg");
-	background-size: cover;
-	padding: 50px 80px;
-	background-attachment: fixed;
-}
-.feed {
-	width: 800px;
-	height: 400px;
-	position: relative;
-	border-radius: 10px;
-	justify-content: center;
-	box-shadow: inset 0 0 90px rgba(0,0,0,0.6),
-					0 0 80px rgba(0,0,0,0.2);
-	background: rgba(0,0,0,0.4);
-}
-.feed form {
-	width: 100%;
-	height: 100%;
-	padding: 20px;
+.review-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 300px; /* Adjust width as needed */
 }
 
-.feed form label {
-	position: absolute;
-	color: #f2f2f2;
-	font-size: 10px;
-	font-weight: 800;
+.review-card .profile {
+    text-align: center;
+    margin-bottom: 20px;
 }
-.feed form input, .feed textarea {
-	padding: 15px;
-	border-radius: 5px;
-	box-shadow: inset 0 0 5px lightgray;
-	border: 1px solid rgba(0,0,0,0.2);
-	outline: none;
-	color: #2E3D49;
-	background: #fff9;
-	font-weight: 600;
+
+.review-card .profile img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 50%;
 }
-.feed form input {
-	margin-bottom: 15px;
-	width: 50%;
+
+.review-card .profile .name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
 }
-.feed form .fname {
-	width: 25%;
+
+.review-card .profile .name a {
+    text-decoration: none;
+    color: #333;
 }
-.feed form textarea {
-	width: 100%;
-	height: 100px;
+
+.review-card .profile .name a:hover {
+    color: #007bff;
 }
-.feed #csubmit {
-	margin-top: 25px; 
-	background: linear-gradient(to right, #FA4B37, #DF2771);
-	border-radius: 5px;
-	border-style: none;
-	outline: none;
-	width: 100%;
-	padding: 15px 25px;
-	color: #fff;
-	font-size: 12px;
-	cursor: pointer;
-}
+
 
 /*SCROLLING TEXT*/
 .marqu {
