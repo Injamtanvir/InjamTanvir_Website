@@ -1,41 +1,23 @@
-// Changing the style of scroll bar
-// window.onscroll = function() {myFunction()};
-		
-// function myFunction() {
-// 	var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-// 	var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-// 	var scrolled = (winScroll / height) * 100;
-// 	document.getElementById("myBar").style.width = scrolled + "%"; 
-// }
+document.addEventListener("DOMContentLoaded", function() {
+    const targetDate = new Date("January 1, 2024 00:00:00").getTime();
 
-function scrollAppear() {
-  var introText = document.querySelector('.side-text');
-  var sideImage = document.querySelector('.sideImage');
-  var introPosition = introText.getBoundingClientRect().top;
-  var imagePosition = sideImage.getBoundingClientRect().top;
-  
-  var screenPosition = window.innerHeight / 1.2;
+    const timerInterval = setInterval(function() {
+        const now = new Date().getTime();
+        const timeleft = targetDate - now;
 
-  if(introPosition < screenPosition) {
-    introText.classList.add('side-text-appear');
-  }
-  if(imagePosition < screenPosition) {
-    sideImage.classList.add('sideImage-appear');
-  }
-}
+        const days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
 
-window.addEventListener('scroll', scrollAppear);
+        document.getElementById("days").textContent = days;
+        document.getElementById("hours").textContent = hours;
+        document.getElementById("minutes").textContent = minutes;
+        document.getElementById("seconds").textContent = seconds;
 
-// For switching between navigation menus in mobile mode
-var i = 2;
-function switchTAB() {
-	var x = document.getElementById("list-switch");
-	if(i%2 == 0) {
-		document.getElementById("list-switch").style= "display: grid; height: 50vh; margin-left: 5%;";
-		document.getElementById("search-switch").style= "display: block; margin-left: 5%;";
-	}else {
-		document.getElementById("list-switch").style= "display: none;";
-		document.getElementById("search-switch").style= "display: none;";
-	}
-	i++;
-}
+        if (timeleft < 0) {
+            clearInterval(timerInterval);
+            document.getElementById("timer").innerHTML = "Countdown finished!";
+        }
+    }, 1000);
+});
