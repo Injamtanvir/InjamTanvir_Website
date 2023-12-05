@@ -66,11 +66,26 @@
       max-width: 500px; /* Maximum width of gallery */
       margin: 0 auto; /* Center the gallery */
     }
+    .image-container {
+      position: relative;
+      overflow: hidden;
+    }
     img {
       width: 100%; /* Responsive width */
       height: auto; /* Maintain aspect ratio */
       object-fit: cover;
       border: 3px solid white; /* Adjust border size */
+    }
+    .image-name {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+      color: white;
+      padding: 5px;
+      text-align: center;
+      font-size: 16px;
     }
     @media (max-width: 768px) {
       .side {
@@ -95,12 +110,18 @@
 
   <!-- Centered images content -->
   <div class="gallery">
-    <a href="BracU_Course_Pre_Advising.exe">
-      <img src="Image/image1.jpg" alt="City">
-    </a>
-    <a href="another-page2.html">
-      <img src="Image/image2.jpg" alt="Trees">
-    </a>
+    <div class="image-container">
+      <a href="BracU_Course_Pre_Advising.exe">
+        <img src="Image/image1.jpg" alt="City">
+        <div class="image-name">.exe File for Desktop</div>
+      </a>
+    </div>
+    <div class="image-container">
+      <a href="another-page2.html">
+        <img src="Image/image2.jpg" alt="Trees">
+        <div class="image-name">For Webpage</div>
+      </a>
+    </div>
   </div>
 
 </body>
