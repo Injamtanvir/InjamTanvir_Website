@@ -19,7 +19,7 @@ body {
 
 /* Style for the input field */
 #course-input {
-    width: 300px;
+    width: 70%;
     padding: 10px;
     margin-right: 10px;
     border: 1px solid #ccc;
