@@ -1,16 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BracU-USIS-2.0.1-Clone Countdown</title>
-    <link rel="stylesheet" href="style.css">
+    <title>BracU-USIS-2.0.1-Clone</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div id="countdownContainer">
-        <h1>BracU-USIS-2.0.1-Clone Will be Displayed here one day before the Advising start Day</h1>
-        <div id="countdown"></div>
+    <div id="search-container">
+        <input type="text" id="course-input" placeholder="Enter Course Code (e.g., CSE111)">
+        <button id="search-button">Submit</button>
     </div>
+    <div id="results"></div>
+
+    <table id="schedule-planner">
+        <tr>
+            <th>Time</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+        </tr>
+        <!-- Timeslots Rows -->
+        <tr><td>8:00</td><td id="Saturday-800"></td><td id="Sunday-800"></td><td id="Monday-800"></td><td id="Tuesday-800"></td><td id="Wednesday-800"></td><td id="Thursday-800"></td></tr>
+        <tr><td>9:30</td><td id="Saturday-930"></td><td id="Sunday-930"></td><td id="Monday-930"></td><td id="Tuesday-930"></td><td id="Wednesday-930"></td><td id="Thursday-930"></td></tr>
+        <tr><td>11:00</td><td id="Saturday-1100"></td><td id="Sunday-1100"></td><td id="Monday-1100"></td><td id="Tuesday-1100"></td><td id="Wednesday-1100"></td><td id="Thursday-1100"></td></tr>
+        <tr><td>12:30</td><td id="Saturday-1230"></td><td id="Sunday-1230"></td><td id="Monday-1230"></td><td id="Tuesday-1230"></td><td id="Wednesday-1230"></td><td id="Thursday-1230"></td></tr>
+        <tr><td>2:00</td><td id="Saturday-1400"></td><td id="Sunday-1400"></td><td id="Monday-1400"></td><td id="Tuesday-1400"></td><td id="Wednesday-1400"></td><td id="Thursday-1400"></td></tr>
+        <tr><td>3:30</td><td id="Saturday-1530"></td><td id="Sunday-1530"></td><td id="Monday-1530"></td><td id="Tuesday-1530"></td><td id="Wednesday-1530"></td><td id="Thursday-1530"></td></tr>
+        <tr><td>5:00</td><td id="Saturday-1700"></td><td id="Sunday-1700"></td><td id="Monday-1700"></td><td id="Tuesday-1700"></td><td id="Wednesday-1700"></td><td id="Thursday-1700"></td></tr>
+    </table>
+
     <script src="script.js"></script>
 </body>
 </html>
