@@ -55,7 +55,6 @@ function populateGreetings() {
 
 function changeMessage() {
     const messages = [
-        "A gift has been sent to your Bkash account",
         "May your day be filled with joy!",
         "Have a fantastic birthday!",
         "Cheers to another year of happiness!",
