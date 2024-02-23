@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const targetDate = new Date("January 1, 2024 00:00:00").getTime();
+    const targetDate = new Date("June 1, 2024 00:00:00").getTime();
 
     const timerInterval = setInterval(function() {
         const now = new Date().getTime();
