@@ -26,13 +26,13 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     var handleSignup = function() {
-        // Here, you can implement any front-end validation or operations you need before redirection
-        window.location.href = '/Menu/menu.html'; // Redirects to the menu page after sign up
+        // Redirects to the menu page after sign up
+        window.location.href = '/Menu/menu.html';
     };
 
     var handleSignin = function() {
-        // Here, you can implement any front-end validation or operations you need before redirection
-        window.location.href = '/Menu/menu.html'; // Redirects to the menu page after sign in
+        // Redirects to the menu page after sign in
+        window.location.href = '/Menu/menu.html';
     };
 
     // Adding event listeners to sign-up and sign-in buttons
