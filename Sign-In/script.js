@@ -13,10 +13,10 @@ function toggleForms() {
   
   function handleSignup() {
     // Here, you can implement any front-end validation or operations you need before redirection
-    window.location.href = 'Dashboard/dashboard.html'; // Redirects to the Dashboard after sign up
+    window.location.href = '/Menu/menu.html'; // Redirects to the Dashboard after sign up
   }
   
   function handleSignin() {
     // Here, you can implement any front-end validation or operations you need before redirection
-    window.location.href = 'Dashboard/dashboard.html'; // Redirects to the Dashboard after sign in
+    window.location.href = '/Menu/menu.html'; // Redirects to the Dashboard after sign in
   }
