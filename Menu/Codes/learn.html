@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="png" href="images/icon/favicon.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<title>Learn with InjamTanvir</title>
+	<meta name="desciption" content="IT Learning Platform">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script>
+		$(window).on('scroll', function(){
+  			if($(window).scrollTop()){
+  			  $('nav').addClass('black');
+ 			 }else {
+ 		   $('nav').removeClass('black');
+ 		 }
+		})
+	</script>
+</head>
+<body>
+<!-- Navigation Bar -->
+	<header id="header">
+		<nav>
+			<div class="logo"><img src="images/icon/logo.png" alt="logo"></div>
+			<ul>
+				<li><a class="active" href="">Home</a></li>
+				<li><a href="#team_section">Contributor</a></li>
+				<li><a href="#services_section">Services</a></li>
+				<li><a href="#contactus_section">Contact</a></li>
+			</ul>
+			<div class="srch"><input type="text" class="search" placeholder="Search here..."><img src="images/icon/search.png" alt="search" onclick=slide()></div>
+			<img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+		</nav>
+		<div class="head-container">
+			<div class="quote">
+				<p>The beautiful thing about learning is that nobody can take it away from you</p>
+				<h5>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, beliefs, and habits. Educational methods include teaching, training, storytelling, discussion and directed research!</h5>
+			</div>
+			<div class="svg-image">
+				<img src="images/extra/svg1.jpg" alt="svg">
+			</div>
+		</div>
+		<div class="side-menu" id="side-menu">
+			<div class="close" onclick="sideMenu(1)"><img src="images/icon/close.png" alt=""></div>
+			<ul>
+				<li><a href="#team_section">Contributor</a></li>
+				<li><a href="#services_section">Services</a></li>
+				<li><a href="#contactus_section">Contact</a></li>
+			</ul>
+		</div>
+	</header>
+
+
+<!-- Some Popular Subjects -->
+	<div class="title">
+		<span>Popular Subjects on Learn with injamtanvir</span>
+	</div>
+	<br><br>
+	<div class="course">
+		<center><div class="cbox">
+		<div class="det"><a href="subjects/notes.html#sample_papers"><img src="images/courses/paper.png">Papers</a></div>
+		<div class="det"><a href="subjects/quiz.html"><img src="images/courses/d1.png">Quiz</a></div>
+		</div></center>
+		<div class="cbox">
+		<div class="det"><a href="subjects/computer_courses.html"><img src="images/courses/computer.png">Computer Courses</a></div>
+		<div class="det"><a href="subjects/computer_courses.html#data"><img src="images/courses/data.png">Data Structures</a></div>
+		<div class="det"><a href="subjects/computer_courses.html#algo"><img src="images/courses/algo.png">Algorithm</a></div>
+		<div class="det det-last"><a href="subjects/projects.html"><img src="images/courses/projects.png">Projects</a></div>
+		</div>
+	</div>
+
+	
+<!-- ABOUT -->
+	<div class="diffSection" id="about_section">
+		<center><p style="font-size: 50px; padding: 100px">About</p></center>
+		<div class="about-content">
+				<div class="side-image">
+					<img class="sideImage" src="images/extra/e3.jpg">
+				</div>
+				<div class="side-text">
+					<h2>What you think about us ?</h2>
+					<p>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, beliefs, and habits. Educational methods include teaching, training, storytelling, discussion and directed research.<br> Educational website can include websites that have games, videos or topic related resources that act as tools to enhance learning and supplement classroom teaching. These websites help make the process of learning entertaining and attractive to the student, especially in today's age. <br>Using HTML(HyperText Markup Language), CSS(Cascading Style Sheet), JavaScript, we can make learning more easier and in a interesting way.</p>
+				</div>
+		</div>
+	</div>
+
+<!-- SERVICES -->
+<div class="service-swipe">
+	<div class="diffSection" id="services_section">
+	<center><p style="font-size: 50px; padding: 100px; padding-bottom: 40px; color: #fff;">Services</p></center>
+	</div>
+	<a href="subjects/computer_courses.html"><div class="s-card"><img src="images/icon/computer-courses.png"><p>Free Online Computer Courses</p></div></a>
+	<a href="#"><div class="s-card"><img src="images/icon/online-tutorials.png"><p>Online Video Lectures</p></div></a>
+	<a href="subjects/notes.html#sample_papers"><div class="s-card"><img src="images/icon/papers.jpg"><p>My Notes</p></div></a>
+	<a href="#"><div class="s-card"><img src="images/icon/discussion.png"><p>Discussion with Our Tutors & Mentors</p></div></a>
+	<a href="subjects/quiz.html"><div class="s-card"><img src="images/icon/q1.png"><p>Brain Teasing Questions to Improve IQ</p></div></a>
+	<a href="#contactus_section"><div class="s-card"><img src="images/icon/help.png"><p>Online Support</p></div></a>
+</div>
+
+<!-- TEAM -->
+	<div class="diffSection" id="team_section">
+		<center><p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">I'm the Founder</p></center>
+		<div class="totalcard">
+			<div class="card">
+				<center><img src="images/creator/injam.jpg"></center>
+				<center><div class="card-title">INJAM UL HAQUE</div>
+				<div id="detail">
+					<p>“ Real education should consist of drawing the goodness and the best out of our own students. What better books can there be than the book of humanity “</p>
+					<div class="duty"></div>
+					<a href="https://www.injamtanvir.com" target="_blank"><button class="btn-akhil">View</button></a>
+				</div>
+				</center>
+			</div>
+		</div>
+	</div>
+
+<!-- Contributors -->
+<div class="review-container">
+    <!-- Review Card for Abdul Bari -->
+    <div class="review-card">
+        <div class="profile">
+            <img src="images/creator/abdulbari.jpg" alt="Abdul Bari">
+            <p class="name"><a href="https://www.youtube.com/@abdul_bari" target="_blank">Abdul Bari</a></p>
+        </div>
+    </div>
+
+    <!-- Review Card for Anisul Islam -->
+    <div class="review-card">
+        <div class="profile">
+            <img src="images/creator/anisulislam.jpg" alt="Anisul Islam">
+            <p class="name"><a href="https://www.youtube.com/@anisul-islam" target="_blank">Anisul Islam</a></p>
+        </div>
+    </div>
+	<!-- Review Card for zulkernine  -->
+	<div class="review-card">
+		<div class="profile">
+			<img src="images/creator/zulkarninemahmud.jpg" alt="Zulkarnine Mahmud">
+			<p class="name"><a href="https://www.youtube.com/@zulkarnine" target="_blank">Zulkarnine Mahmud</a></p>
+		</div>
+	</div>
+	<!-- Review Card for   -->
+	<div class="review-card">
+		<div class="profile">
+			<img src="images/creator/jhankarmahbub.jpg" alt="Jhankar Mahbub">
+			<p class="name"><a href="https://www.youtube.com/@JhankarMahbub" target="_blank">Jhankar Mahbub</a></p>
+		</div>
+	</div>	
+
+    <!-- Review Card for Tamim Shahriar -->
+    <div class="review-card">
+        <div class="profile">
+            <img src="images/creator/Tamimshahriar.jpg" alt="Tamim Shahriar">
+            <p class="name"><a href="https://www.youtube.com/@TamimShahriar" target="_blank">Tamim Shahriar</a></p>
+        </div>
+    </div>
+
+    <!-- Review Card for Farhan Hossain -->
+    <div class="review-card">
+        <div class="profile">
+            <img src="images/creator/farhanhossain.jpg" alt="Farhan Hossan"> <!-- Update the image source if needed -->
+            <p class="name"><a href="https://www.youtube.com/@FarhanHossan" target="_blank">Farhan Hossan</a></p>
+        </div>
+    </div>
+
+    <!-- Review Card for Coursera -->
+    <div class="review-card">
+        <div class="profile">
+            <img src="images/creator/coursera.jpg" alt="Coursera">
+            <p class="name"><a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjllZi0nOOCAxX9FoMDHahCAvMYABAAGgJzZg&ase=2&gclid=CjwKCAiA9ourBhAVEiwA3L5RFonqinKaSNUEObf_xvg33Z25SK7qTrs1DPit5fmxeSaMTZVcMdlRiRoCklEQAvD_BwE&ei=2ApkZcyNOZyVseMP5vaH8AM&ohost=www.google.com&cid=CAESVeD2CnXZn03fHtmRB4ApIIwL_AV4OnxfoWuj1DqbpxShsqUX8jDsWJuIa1qT37fzigFaNCFpd1oS9XIBj25qUPtS4b6q6B8v-hUG6tBUV1NHPbd5WLo&sig=AOD64_1ZYmY20x7sh5aJ-Xegz9xh3INvIA&q&sqi=2&nis=4&adurl&ved=2ahUKEwjM2ZK0nOOCAxWcSmwGHWb7AT4Q0Qx6BAgIEAE" target="_blank">Coursera</a></p>
+        </div>
+    </div>
+
+    <!-- Review Card for Udemy -->
+    <div class="review-card">
+        <div class="profile">
+            <img src="images/creator/udemy.jpg" alt="Udemy">
+            <p class="name"><a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjMpPjSnOOCAxX6pWYCHfW0C-4YABAAGgJzbQ&ase=2&gclid=CjwKCAiA9ourBhAVEiwA3L5RFhH5sW9fsURBX63_8QfzW9v5tjbKDuo19wLnySgfLZ93SMKcn4EC4xoCXBQQAvD_BwE&ohost=www.google.com&cid=CAESVeD21IkyEGlch6uCKTT4lMNcVpYjXy9Ev853bQCF2qTjkX6NG4oU7z1kZeF_vRGIWpvk_yTjgUKWTEyT_MkzB7ExdXWOrBHy9NjxmFALRD4Rjs3J3QA&sig=AOD64_2y5sVZ-3f0UD1w046gzMry_AW_0w&q&nis=4&adurl&ved=2ahUKEwjK6fLSnOOCAxX2TWwGHcj_CLMQ0Qx6BAgFEAE" target="_blank">Udemy</a></p>
+        </div>
+    </div>
+
+    <!-- Review Card for Phitron -->
+    <div class="review-card">
+        <div class="profile">
+            <img src="images/creator/phitron.jpg" alt="Phitron">
+            <p class="name"><a href="https://phitron.io/" target="_blank">Phitron</a></p>
+        </div>
+    </div>
+</div>
+
+<!-- CONTACT US -->
+	<div class="diffSection" id="contactus_section">
+		<center><p style="font-size: 50px; padding: 100px">Message Us for help</p></center>
+		<div class="csec"></div>
+		<div class="back-contact">
+			<div class="cc">
+			<form action="mailto:learn@injamtanvir.com" method="post" enctype="text/plain">
+				<label>First Name <span class="imp">*</span></label><label style="margin-left: 185px">Last Name <span class="imp">*</span></label><br>
+				<center>
+				<input type="text" name="" style="margin-right: 10px; width: 175px" required="required"><input type="text" name="lname" style="width: 175px" required="required"><br>
+				</center>
+				<label>Email <span class="imp">*</span></label><br>
+				<input type="email" name="mail" style="width: 100%" required="required"><br>
+				<label>Message <span class="imp">*</span></label><br>
+				<input type="text" name="message" style="width: 100%" required="required"><br>
+				<label>Additional Details</label><br>
+				<textarea name="addtional"></textarea><br>
+				<button type="submit" id="csubmit">Send Message</button>
+			</form>
+			</div>
+		</div>
+	</div>
+
+<!-- Sliding Information -->
+	<marquee style="background: linear-gradient(to right, #FA4B37, #DF2771); margin-top: 50px;" direction="left" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="20"><div class="marqu">“Education is the passport to the future, for tomorrow belongs to those who prepare for it today.” “Your attitude, not your aptitude, will determine your altitude.” “If you think education is expensive, try ignorance.” “The only person who is educated is the one who has learned how to learn …and change.”</div></marquee>
+
+<!-- FOOTER -->
+	<footer>
+		<div class="footer-container">
+			<div class="left-col">
+				<img src="images/icon/logo1.png" style="width: 200px;">
+				<div class="logo"></div>
+				<div class="social-media">
+					<a href="#"><img src="images/icon\fb.png"></a>
+					<a href="#"><img src="images/icon\insta.png"></a>
+					<a href="#"><img src="images/icon\tt.png"></a>
+					<a href="#"><img src="images/icon\ytube.png"></a>
+					<a href="#"><img src="images/icon\linkedin.png"></a>
+				</div><br><br>
+				<p class="rights-text">Copyright © 2024 InjamTanvir.com All Rights Reserved.</p>
+				<br><p><img src="images/icon/location.png">Dhaka - 1214<br>Bangladesh</p><br>
+				<p><img src="images/icon/phone.png"> +880 16013 99628<br><img src="images/icon/mail.png">&nbsp; learn@injamtanvir.com</p>
+			</div>
+			<div class="right-col">
+				<h1 style="color: #fff">Our Newsletter</h1>
+				<div class="border"></div><br>
+				<p>Enter Your Email to get our News and updates.</p>
+				<form class="newsletter-form">
+					<input class="txtb" type="email" placeholder="Enter Your Email">
+					<input class="btn" type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>

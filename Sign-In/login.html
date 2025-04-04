@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign-In</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="img-container"></div>
+        <div class="form-container">
+            <span class="travel-time">InjamTanvir</span>
+            <section class="option-for-log">
+                <a class="signup option-toggle" href="#" onclick="toggleForms()">SIGN UP</a>
+                <a class="signin" href="#" onclick="toggleForms()">SIGN IN</a>
+            </section>
+            <form id="signup-form" style="display:block;">
+                <div class="signup-screen">
+                    <section class="form-description">
+                        <h1>Welcome</h1>
+                        <p>Your next adventure awaits</p>
+                    </section>
+                    <section class="inputs">
+                        <label for="signup-email">Email</label>
+                        <input type="text" id="signup-email" name="email" required>
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password" name="password" required>
+                        <section class="tap">
+                            <button type="button" onclick="handleSignup()">SIGN UP</button>
+                        </section>
+                    </section>
+                </div>
+            </form>
+            <form id="signin-form" style="display:none;">
+                <div class="signin-screen">
+                    <section class="form-description">
+                        <h1>Welcome Back</h1>
+                        <p>Start your journey with us</p>
+                    </section>
+                    <section class="inputs">
+                        <label for="signin-email">Email</label>
+                        <input type="text" id="signin-email" name="email" required>
+                        <label for="signin-password">Password</label>
+                        <input type="password" id="signin-password" name="password" required>
+                        <section class="tap">
+                            <button type="button" onclick="handleSignin()">SIGN IN</button>
+                        </section>
+                    </section>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

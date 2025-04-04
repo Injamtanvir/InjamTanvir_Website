@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: injamtanvir-website
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: build
+    routes:
+      - type: redirect
+        source: /*
+        destination: /
+    branch: main
+    repo: https://github.com/Injamtanvir/InjamTanvir_Website.git
+    envVars:
+      - key: NODE_VERSION
+        value: 22.14.0

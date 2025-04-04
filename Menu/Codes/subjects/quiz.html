@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz on LearnEd</title>
+    <link rel="stylesheet" type="text/css" href="quizStyle.css">
+    <link rel="shortcut icon" href="../images/icon/favicon.png" type="image/png">
+    <script src="../script.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="nav">
+        <div id="learned-logo">
+            <a href="../index.html">
+                <img src="../images/icon/logo.png" alt="LearnEd Logo" style="width: 120px;">
+            </a>
+        </div>
+        <nav id="navigation-menu">
+            <ul id="nav-list">
+                <!-- List of navigation items -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Title Section -->
+    <div class="main-title">
+        <h1>Daily Quiz on LearnEd</h1>
+        <p>If you think education is expensive, try ignorance</p>
+        <button onclick="startQuiz()">Start Now</button>
+    </div>
+
+    <!-- Quiz Selection Panel -->
+    <div class="quiz-selection-panel">
+        <ul class="quiz-topics">
+            <li onclick="loadQuiz(1)">C/C++</li>
+            <li onclick="loadQuiz(2)">Python</li>
+            <li onclick="loadQuiz(3)">Java</li>
+            <li onclick="loadQuiz(4)">JavaScript</li>
+            <li onclick="loadQuiz(5)">Data Structures</li>
+            <li onclick="loadQuiz(6)">Algorithms</li>
+        </ul>
+    </div>
+
+    <!-- Quiz Iframe Container -->
+    <div class="quiz-container">
+        <iframe class="quiz-iframe" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
